@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="486" height="486" viewBox="0 0 486 486">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="Rectangle_578" fill="#fff" stroke="#707070" d="M0 0H486V486H0z" transform="translate(360 947)"/>
+        </clipPath>
+        <style>
+            .cls-3{fill:#1b3968}.cls-4{fill:none;stroke:#314e7c;stroke-miterlimit:10;stroke-width:.618px}
+        </style>
+    </defs>
+    <g id="Mask_Group_135" clip-path="url(#clip-path)" transform="translate(-360 -947)">
+        <g id="logo_struc" transform="translate(353.574 947.34)">
+            <g id="Group_2193">
+                <path id="Path_2269" d="M396.535 146.863H346.8a140.079 140.079 0 0 0-202.16-15.755c-.247.247-.556.494-.8.741a8.684 8.684 0 0 0-1.112 1.05 142.467 142.467 0 0 0-33.117 46.03 147.6 147.6 0 0 0-9.638 30.954 131.693 131.693 0 0 0-2.286 25.27 8.035 8.035 0 0 1 .185 1.359l.185 5.375a127.888 127.888 0 0 0 2.533 21.5h.062l.247.062a140.611 140.611 0 0 0 10.318 31.263l-.309-.062A139.857 139.857 0 0 0 176.4 361.5a137.851 137.851 0 0 0 52.517 13.9l15.261 41.767-5.5.185c-5.808 0-11.368-.247-16.744-.741-89.156-7.847-160.641-80.444-165.336-171.453a4.73 4.73 0 0 1-.371-1.483l-.247-7.291a181.387 181.387 0 0 1 34.164-106.821c1.854-2.286 3.645-4.757 5.5-7.167A181.867 181.867 0 0 1 229.16 54.185a3.773 3.773 0 0 0 .8-.185 28.283 28.283 0 0 0 3.275-.185h4.078a181.177 181.177 0 0 1 159.222 93.048z" class="cls-3"/>
+                <path id="Path_2270" d="M268.641 395.794v-32.066a5.247 5.247 0 0 1 5.252-5.252h99.35a5.247 5.247 0 0 1 5.252 5.252v32.066a5.247 5.247 0 0 1-5.252 5.252h-99.289a5.222 5.222 0 0 1-5.313-5.252z" class="cls-3"/>
+                <path id="Path_2271" d="M425.513 172.751H222.735a19.948 19.948 0 0 0-19.957 19.957v135.246a6.935 6.935 0 0 0 6.982 6.982h229.654a5.181 5.181 0 0 0 5.19-5.19V191.9a19.157 19.157 0 0 0-19.091-19.149zm-23.54 114.487a5.078 5.078 0 0 1-5.19 5.066H250.476a5.011 5.011 0 0 1-5.066-5.066v-66.6a5.116 5.116 0 0 1 5.066-5.19h146.307a5.181 5.181 0 0 1 5.19 5.19v66.6z" class="cls-3"/>
+            </g>
+            <circle id="Ellipse_127" cx="181.709" cy="181.709" r="181.709" class="cls-4" transform="translate(55.606 53.876)"/>
+            <circle id="Ellipse_128" cx="140.19" cy="140.19" r="140.19" class="cls-4" transform="translate(97.126 95.272)"/>
+            <path id="Line_44" d="M486 0L0 0" class="cls-4" transform="translate(6.426 147.419)"/>
+            <path id="Line_45" d="M154.153 439.97L0 0" class="cls-4" transform="translate(105.467 22.675)"/>
+            <path id="Line_46" d="M0 439.97L0 0" class="cls-4" transform="translate(55.668 22.675)"/>
+            <path id="Line_47" d="M0 439.97L0 0" class="cls-4" transform="translate(97.62 22.675)"/>
+            <path id="Line_48" d="M0 439.97L0 0" class="cls-4" transform="translate(401.911 22.675)"/>
+            <path id="Line_49" d="M0 439.97L0 0" class="cls-4" transform="translate(268.764 22.675)"/>
+            <path id="Line_50" d="M0 439.97L0 0" class="cls-4" transform="translate(378.371 22.675)"/>
+            <path id="Line_51" d="M0 439.97L0 0" class="cls-4" transform="translate(444.666 22.675)"/>
+            <path id="Line_52" d="M0 439.97L0 0" class="cls-4" transform="translate(202.902 22.675)"/>
+            <path id="Line_53" d="M0 439.97L0 0" class="cls-4" transform="translate(245.657 22.675)"/>
+            <path id="Line_54" d="M0 0L485.382 0" class="cls-4" transform="translate(6.426 172.812)"/>
+            <path id="Line_55" d="M0 0L485.382 0" class="cls-4" transform="translate(6.426 215.568)"/>
+            <path id="Line_56" d="M0 0L485.382 0" class="cls-4" transform="translate(6.426 292.243)"/>
+            <path id="Line_57" d="M0 0L485.382 0" class="cls-4" transform="translate(6.426 334.812)"/>
+            <path id="Line_58" d="M0 0L485.382 0" class="cls-4" transform="translate(6.426 358.291)"/>
+            <path id="Line_59" d="M0 0L485.382 0" class="cls-4" transform="translate(6.426 401.293)"/>
+            <circle id="Ellipse_129" cx="6.302" cy="6.302" r="6.302" class="cls-4" transform="translate(432.062 322.208)"/>
+            <circle id="Ellipse_130" cx="5.561" cy="5.561" r="5.561" class="cls-4" transform="translate(390.789 281.183)"/>
+            <circle id="Ellipse_131" cx="5.561" cy="5.561" r="5.561" class="cls-4" transform="translate(367.249 358.476)"/>
+            <circle id="Ellipse_132" cx="5.561" cy="5.561" r="5.561" class="cls-4" transform="translate(268.703 358.476)"/>
+            <circle id="Ellipse_133" cx="5.561" cy="5.561" r="5.561" class="cls-4" transform="translate(268.703 389.986)"/>
+            <circle id="Ellipse_134" cx="5.561" cy="5.561" r="5.561" class="cls-4" transform="translate(367.249 389.986)"/>
+            <circle id="Ellipse_135" cx="5.252" cy="5.252" r="5.252" class="cls-4" transform="translate(391.407 215.444)"/>
+            <circle id="Ellipse_136" cx="5.19" cy="5.19" r="5.19" class="cls-4" transform="translate(245.657 281.924)"/>
+            <circle id="Ellipse_137" cx="5.252" cy="5.252" r="5.252" class="cls-4" transform="translate(245.657 215.506)"/>
+            <circle id="Ellipse_138" cx="6.302" cy="6.302" r="6.302" class="cls-4" transform="translate(202.84 322.208)"/>
+            <circle id="Ellipse_139" cx="19.771" cy="19.771" r="19.771" class="cls-4" transform="translate(404.32 172.689)"/>
+            <circle id="Ellipse_140" cx="19.771" cy="19.771" r="19.771" class="cls-4" transform="translate(202.778 172.689)"/>
+        </g>
+    </g>
+</svg>

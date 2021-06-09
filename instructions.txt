@@ -1,0 +1,3 @@
+1.Sass loader ka hmang tel
+2.if issue (rule can have ... ) npm uninstall webpack , npm install webpack@^4.0.0 --save-dev
+3.
