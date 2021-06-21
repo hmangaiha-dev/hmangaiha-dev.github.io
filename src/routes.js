@@ -9,6 +9,8 @@ import AboutUs from './components/AboutUs'
 import ContactUs from './components/ContactUs'
 import Pioneers from './components/Pioneers'
 import Awards from './components/Awards'
+import page404 from './components/page404'
+
 
 
 
@@ -64,6 +66,12 @@ const routes =[
             path:'/awards',
             name:'awards',
             component:Awards
+        },
+        {
+            path:'/page404',
+            name:'page404',
+            component:page404
+
         }
     ]
 
@@ -77,7 +85,19 @@ const routes =[
 //     routes // short for `routes: routes`
 //  });
 
-const router = createRouter({ history: createWebHistory(), routes })
+const router = createRouter({ history: createWebHistory(),
+    
+    routes,
+    // scrollBehavior(to) {
+    //     const position={};
+    //     if (to.hash) {
+          
+    //         position.selector=  to.hash;
+    //         return position.selector;
+          
+    //     }
+    //   }, 
+    })
 
 
 export default router

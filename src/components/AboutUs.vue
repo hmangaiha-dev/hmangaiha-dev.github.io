@@ -1,5 +1,5 @@
 <template>
-  <div class="aboutus" style="margin-top:-1rem;">
+  <div class="aboutus" style="margin-top:auto;">
 
 
     <span class="aboutusback">
@@ -14,12 +14,12 @@
             src="../assets/aboutuslogo.png"
             alt=""
             srcset=""
-            class="aboutimage" style="width:70%"
+            class="aboutimage" 
           />
         </div>
 
         <div class="abouttextcol">
-          <p class="headings" style="font-size:24px">Glimpse of MSeGS</p>
+          <p class="headings" style="font-size:24px;width:100%">Glimpse of MSeGS</p>
           <p class="aboutcontents">
             Mizoram State e-Governance Society (MSeGS) is an autonomous society
             under Government of Mizoram and Non-Profit Organization setup in
@@ -46,19 +46,31 @@
         </p>
         <div class="ourprofilerows">
           <div class="ourprofileitems">
-            <p id="ourprofilenumber">15+</p>
+            <p id="ourprofilenumber">
+                <vue3-autocounter ref='counter' :startAmount='0' :endAmount='15' :duration='3' prefix='' suffix='+' separator='' decimalSeparator=' ' :decimals='0' :autoinit='true' />
+              
+              </p>
             <p id="ourprofilecontent">years of experience</p>
           </div>
           <div class="ourprofileitems">
-            <p id="ourprofilenumber">500+</p>
+            <p id="ourprofilenumber">
+                <vue3-autocounter ref='counter' :startAmount='0' :endAmount='500' :duration='3' prefix='' suffix='+' separator='' decimalSeparator=' ' :decimals='0' :autoinit='true' />
+
+            </p>
             <p id="ourprofilecontent">Project lauched to GoM</p>
           </div>
           <div class="ourprofileitems">
-            <p id="ourprofilenumber">30+</p>
+            <p id="ourprofilenumber">
+                <vue3-autocounter ref='counter' :startAmount='0' :endAmount='30' :duration='3' prefix='' suffix='+' separator='' decimalSeparator=' ' :decimals='0' :autoinit='true' />
+
+            </p>
             <p id="ourprofilecontent">Employees</p>
           </div>
           <div class="ourprofileitems">
-            <p id="ourprofilenumber">06</p>
+            <p id="ourprofilenumber">
+                <vue3-autocounter ref='counter' :startAmount='0' :endAmount='6' :duration='3' prefix='0' suffix='+' separator='' decimalSeparator=' ' :decimals='0' :autoinit='true' />
+
+            </p>
             <p id="ourprofilecontent">Awards</p>
           </div>
         </div>
@@ -71,7 +83,7 @@
             src="../assets/aboutusvision.png"
             alt=""
             srcset=""
-            class="aboutimage"
+            class="aboutimages"
           />
         </div>
         <div class="abouttextcol">
@@ -100,7 +112,7 @@
             src="../assets/aboutusmission.png"
             alt=""
             srcset=""
-            class="aboutimage"
+            class="aboutimages"
           />
         </div>
      
@@ -112,7 +124,7 @@
             src="../assets/aboutusobjectives.png"
             alt=""
             srcset=""
-            class="aboutimage"
+            class="aboutimages"
           />
         </div>
         <div class="abouttextcol">
@@ -154,8 +166,15 @@
 </template>
 
 <script>
+import Vue3autocounter from 'vue3-autocounter';
+
 export default {
-  setup() {},
+   components: {
+    'vue3-autocounter': Vue3autocounter
+  },
+mounted(){
+    window.scrollTo(0,0);
+  }
 };
 </script>
 
@@ -187,6 +206,13 @@ export default {
 .aboutimage {
  
   width: 60%;
+  height:auto
+//   margin: auto;
+}
+.aboutimages {
+ 
+  width: 100%;
+  height:auto
 //   margin: auto;
 }
 .abouttextcol {
@@ -201,7 +227,7 @@ export default {
   align-items: center;
 
   font-family: Poppins;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -213,5 +239,56 @@ export default {
 
 .aboutlists{
     margin-left:-1rem;
+}
+
+@media screen and(max-width:800px) {
+
+.aboutrows {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom:3rem;
+}
+.aboutimagecol {
+  width: 80%;
+   display: flex;
+   margin:auto;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutimage {
+ 
+  width: 60%;
+  height: auto;
+//   margin: auto;
+}
+.abouttextcol {
+  width: 100%;
+  align-items: center;
+}
+
+.aboutcontents {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: #393939;
+}
+
+.aboutlists{
+    margin-left:-1rem;
+}
+  
 }
 </style>

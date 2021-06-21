@@ -2,10 +2,17 @@
 @import "../assets/msegsstyles.scss";
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
-
+*{
+    width:device-width;
+    margin:0;
+  
+}
 #app {
     font-family: 'Playfair Display';
     /* overflow-x: hidden; */
+  }
+  a{
+      text-decoration: none;
   }
 
 #app::-webkit-scrollbar {
@@ -56,21 +63,53 @@
  
 
 }
-
+.subheading{
+    font-size:18px;
+}
 #app > ul > div > span > li:nth-child(n) > a{
     text-decoration: none;
     color:white;
 }
 
+/* //mobile */
+@media screen and (max-width:800px){
+    *{
+    width:device-width;
 
-@media screen and (max-width:600px){
-
+        margin: 0;
+    }
     .container{
         margin:0 8vw 0 8vw;
     }
     .contents{
         margin:0px;
         
+    }
+
+    
+}
+
+/* tablets */
+/* @media only screen and(min-width:1025px){
+    .container{
+        margin:0 12vw 0 80vw;
+    }
+    
+} */
+/* laptops */
+@media only screen and (max-width:1366px) {
+    .container{
+        
+        margin:0 16vw 0 16vw;
+    }
+    
+}
+
+/* large screens */
+@media only screen and (min-width:1367px) {
+    .container{
+        
+        margin:0 20vw 0 20vw;
     }
     
 }

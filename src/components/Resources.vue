@@ -1,5 +1,5 @@
 <template>
-  <div style="margin-top:-1rem">
+  <div style="margin-top:auto">
     <div class="ourservices">
       <p class="headings " style="margin:auto">Resources</p>
     </div>
@@ -18,7 +18,7 @@
             </div>
 
             <div class="resourcesprinter">
-              <img src="../assets/pdficon.svg" alt="" srcset="" />
+             <a href="../assets/biometric.pdf" download="biometric.pdf"> <img src="../assets/pdficon.svg" alt="" srcset="" class="pdficon"/></a>
             </div>
           </div>
 
@@ -33,7 +33,7 @@
             </div>
 
             <div class="resourcesprinter">
-              <img src="../assets/pdficon.svg" alt="" srcset="" />
+              <img src="../assets/pdficon.svg" alt="" srcset="" class="pdficon"/>
             </div>
           </div>
 
@@ -55,7 +55,9 @@
 
 <script>
 export default {
-  setup() {},
+  mounted(){
+    window.scrollTo(0,0);
+  }
 };
 </script>
 
@@ -74,11 +76,13 @@ export default {
 }
 
 .resourcescol {
+  width:80%;
   display: flex;
   flex-direction: column;
 }
 
 .archivecol {
+  width:20%;
   display: flex;
   flex-direction: column;
   margin-left: 3rem;
@@ -102,17 +106,19 @@ export default {
   box-shadow: 1px 2px 5px rgba($color: #000000, $alpha: 0.2);
 }
 .resourcescontents {
-  width: 70%;
+  width: 95%;
+  padding:1rem;
 }
 
 .resourcesprinter {
   width: 5%;
+  padding-right: 1rem;
   
 }
 
 .resourcescontentsdate {
   font-family: Poppins;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -124,7 +130,7 @@ export default {
 
 .resourcescontentstexts {
   font-family: "Playfair Display";
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -152,9 +158,34 @@ export default {
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: 0.2;
+  line-height: 18px;
   letter-spacing: normal;
   text-align: left;
   color: #2c3134;
+  padding-top:1rem;
+}
+
+
+@media screen and(max-width:800px){
+ #app > div > div.spacing-top > div > div.container {
+   margin:0 8vw;
+ }
+.rows1 {
+  display: flex;
+  flex-direction: column;
+}
+.resourcescol {
+  width:100%;
+}
+.pdficon{
+  margin-right:2rem;
+}
+
+.archivecol{
+  display: none;
+
+}
+
+
 }
 </style>

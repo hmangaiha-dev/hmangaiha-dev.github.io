@@ -1,11 +1,17 @@
 <template>
-  <div style="margin-top:-1rem">
+  <div style="margin-top:0">
     <div class="ourservices">
       <p class="headings " style="margin:auto">Our Services</p>
     </div>
-    <div class="services1 container">
-      <div class="sdtext">
+    <span id="sd"></span>
+    <div class="services1 container" >
+      <div class="sdtext" name="sd" >
         <p class="headings sdheadings">Software Development</p>
+        <div class="mobileservices">
+<div class="sdimage">
+        <img src="../assets/sdbig.png" alt="" srcset="" class="sdimage" />
+      </div>
+        </div>
         <p id="sdcontents">
           We are sincere, experienced and dedicated team working in RAD tools
           with latest & flexible agile development model. We have scalable data
@@ -22,17 +28,25 @@
           <li>Enterprise Resource Planning (ERP)</li>
         </ul>
       </div>
-      <div class="sdimage">
+      <div class="sdimage desktopservices">
         <img src="../assets/sdbig.png" alt="" srcset="" class="sdimage" />
       </div>
     </div>
 
     <div class="services1 container">
-      <div class="sdimage">
+
+      <div class="sdimage desktopservices">
         <img src="../assets/consultbig.png" alt="" srcset="" class="sdimage" />
       </div>
-      <div class="sdtext">
+
+      <div class="sdtext" >
         <p class="headings sdheadings " id="blues">Consultancy Services</p>
+    <span  id="cs"></span>
+    <div class="mobileservices">
+<div class="sdimage">
+        <img src="../assets/consultbig.png" alt="" srcset="" class="sdimage" />
+      </div>
+        </div>
         <p id="sdcontents">
           We are committed to provide high value to our clients and ensuring
           long term business relationship. We partner with top consulting firms
@@ -62,10 +76,15 @@
         </ul>
       </div>
     </div>
+    <div class="services1 container" >
+      <div class="sdtext" >
 
-    <div class="services1 container">
-      <div class="sdtext">
         <p class="headings sdheadings">Manpower Outsourcing</p>
+        <div class="mobileservices">
+<div class="sdimage ">
+        <img src="../assets/manpowerbig.png" alt="" srcset="" class="sdimage" />
+      </div>
+        </div>
         <p id="sdcontents">
           We are dedicated team of hardworking, experience, dynamic and
           professional working to provide quality and superior business
@@ -77,6 +96,8 @@
           candidates for the job. We assure you our best of services at all
           times
         </p>
+<span id="mpo"></span>
+
         <!-- <ul id="sdcontents">
           <li>UX/UI Design</li>
           <li>Responsive Web Application Development</li>
@@ -85,23 +106,30 @@
           <li>Enterprise Resource Planning (ERP)</li>
         </ul> -->
       </div>
-      <div class="sdimage">
+      <div class="sdimage desktopservices">
         <img src="../assets/manpowerbig.png" alt="" srcset="" class="sdimage" />
       </div>
     </div>
 
     <div class="services1 container">
-      <div class="sdimage">
+      <div class="sdimage" >
         <img
           src="../assets/datacentrebig.png"
           alt=""
           srcset=""
-          class="sdimage"
+          class="sdimage desktopservices"
         />
       </div>
-      <div class="sdtext">
+      <div class="sdtext"  >
         <p class="headings sdheadings" id="blues">Data Center</p>
-        <p id="sdcontents">
+        <div class="mobileservices">
+<div class="sdimage">
+        <img src="../assets/datacentrebig.png" alt="" srcset="" class="sdimage" />
+      </div>
+        </div>
+      <span id="dc"></span>
+
+        <p id="sdcontents" >
           We have experienced in design, build, operate, maintenance, &
           management of Data Centre (DC). Our data centre is ISO20000-1 and
           ISO27001 certification and compliance. We provide efficient and timely
@@ -111,11 +139,18 @@
           provide 24x7 customer support with enable data recovery site.
         </p>
       </div>
+      
     </div>
 
-    <div class="services1 container">
-      <div class="sdtext">
+    <div class="services1 container" >
+
+      <div class="sdtext" >
         <p class="headings sdheadings">Internetworking Service</p>
+        <div class="mobileservices">
+<div class="sdimage">
+        <img src="../assets/internetworkingbig.png" alt="" srcset="" class="sdimage" />
+      </div>
+        </div>
         <p id="sdcontents">
           We are dedicated team of hard core networking professional in design,
           build, operate, maintenance and management of state-wide area
@@ -125,8 +160,10 @@
           MPLS (Internet Protocol Multi-Protocol Label Switching) & GPON
           (Gigabit Passive Optic Network) technologies.
         </p>
+        <span id="ins"></span>
+
       </div>
-      <div class="sdimage">
+      <div class="sdimage desktopservices">
         <img
           src="../assets/internetworkingbig.png"
           alt=""
@@ -137,7 +174,7 @@
     </div>
 
     <div class="services1 container">
-      <div class="sdimage">
+      <div class="sdimage desktopservices">
         <img
           src="../assets/capacitybuildingbig.png"
           alt=""
@@ -145,10 +182,15 @@
           class="sdimage"
         />
       </div>
-      <div class="sdtext">
+      <div class="sdtext" id="ct">
         <p class="headings sdheadings" id="blues">
           Capacity Building & Trainning
         </p>
+        <div class="mobileservices">
+<div class="sdimage">
+        <img src="../assets/capacitybuildingbig.png" alt="" srcset="" class="sdimage" />
+      </div>
+        </div>
         <p id="sdcontents">
           We have our owned training centre with state-of-the-art facilities and
           has been tied-up with NISG, NeGD, IIPA, ATI for providing various
@@ -165,7 +207,37 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      hashvalue: "sd",
+    };
+  },
+  methods: {
+    scrolltoo(id) {
+      document.getElementById(id).scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+    },
+  },
+  created(){
+    window.scrollTo(0,0);
+
+  },
+  mounted() {
+    console.log("router", this.$route.params.id);
+
+    try {
+      this.hashvalue = this.$route.params.id;
+    this.scrolltoo(this.hashvalue);
+      
+    } catch (error) {
+    this.$router.push({name:'services'});
+    this.$route.params =null;
+      
+    }
+    
+    
+  },
+};
 </script>
 
 <style lang="scss">
@@ -222,26 +294,56 @@ export default {};
   width: 30vw;
 }
 
+.mobileservices{
+  display: none;
+}
 
-@media screen and (max-width:900px){
+@media screen and (max-width: 800px) {
+  // internalcontain
+  // #app > div > div.spacing-top > div > div:nth-child(n){
+  //   margin:0 8vw;
+  // }
+#app > div > div.spacing-top > div > div.ourservices{
+  margin:auto;
+}
   .services1 {
-  padding: 3rem 0 3rem 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+    padding: 3rem 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
-.sdimage {
-  width: 100%;
-  text-align: center;
-  margin: auto;
-  height: auto;
-  width: 100%;
-}
+  .sdimage {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    height: auto;
+    width: 100%;
+  }
 
-.sdtext {
-  width: 100%;
-}
+  .sdtext {
+    width: 100%;
+  }
+  #sdcontents{
+    // margin:0;
+  }
+  .sdheadings {
+    width: 100%;
+    font-family: "Playfair Display", serif; //   font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #dc3d32;
+  }
+  .desktopservices{
+    display: none;
+  }
+  .mobileservices{
+    display:flex;
+  }
 }
 </style>

@@ -2,7 +2,7 @@
   <div style="margin-top:-1rem">
     <div class="details">
       <p class="headings " style="margin:auto">Project Details</p>
-      <p style="color: #707070;font-size:12px;">Projects / e-District</p>
+      <p style="color: #707070;font-size:12px;"><router-link to="/projects" style="text-decoration:underline;color:#707070">Projects</router-link> / e-District</p>
     </div>
     <div class="container">
       <div class="detailsrows">
@@ -97,6 +97,8 @@
             formalities through authorised service centre like CSC, RIK and
             e-District facilitation centre.
           </p>
+           
+
         </div>
       </div>
     </div>
@@ -104,8 +106,25 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
-  setup() {},
+  data(){
+    return{
+      texts:null,
+      imagess:null
+    }
+  },
+  created(){
+    axios.get('https://jsonplaceholder.typicode.com/photos/1').then((response) => {
+  console.log(response.data);
+  this.texts = response.data.title;
+  this.imagess = response.data.thumbnailUrl;
+})
+
+  },
+  mounted(){
+    window.scrollTo(0,0);
+  }
 };
 </script>
 
@@ -131,6 +150,8 @@ export default {
 }
 
 .detailscard {
+  margin-top:1rem;
+
   width: 100%;
   box-shadow: 1px 1px 4px grey;
   border-radius: 5px;
@@ -189,7 +210,7 @@ export default {
   width: 100%;
 }
 .col2heading {
-  font-family: PlayfairDisplay;
+  font-family: 'Playfair Display';
   font-size: 20px;
   font-weight: bold;
   font-stretch: normal;
@@ -198,6 +219,7 @@ export default {
   letter-spacing: normal;
   text-align: left;
   color: #393939;
+  padding-top:16px;
 }
 
 .col2contents {

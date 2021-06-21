@@ -1,6 +1,6 @@
 <template>
     
-  <div class="pioneers" style="margin-top:-1rem;margin-bottom:2rem">
+  <div class="pioneers" style="margin-top:auto;margin-bottom:2rem">
     <span class="aboutusback">
       <p class="headings" style="margin:auto">Awards</p>
       <p style="color: #707070;font-size:12px;">About Us / Awards</p>
@@ -51,7 +51,7 @@
         <img src="../assets/awards.png" alt="" srcset="" class="awardsimage">
         <span class="awardscontents">
             <p class="awardstitle"> National Award for e-Governance, 2017-18</p>
-            <p class="awardstexts">National award for e-governance, 2017-18 on the project "Aizawl district disaster management authority mobile application”</p>
+            <p class="awardstexts">On the project "Aizawl district disaster management authority mobile application”</p>
         </span>
     </div>
 </div>
@@ -62,6 +62,14 @@
   </div>
 </template>
 
+<script>
+export default {
+  mounted(){
+    window.scrollTo(0,0);
+  }
+}
+</script>
+
 <style lang="scss" scoped>
 .awardsrows{
     display: flex;
@@ -71,9 +79,10 @@
 }
 .awardscards{
     width: 24rem;
-  height: 8rem;
+  height: 9em;
 //   margin: 40px 20px 16.5px 180px;
 margin:1rem;
+// padding-right:10px;
 //   padding: 0 17px 0 0;
   border-radius: 2.5px;
   box-shadow: 0 0 7.5px 0 rgba(0, 0, 0, 0.16);
@@ -95,8 +104,8 @@ margin:1rem;
 //     width: 160.5px;
 //   height: 36px;
   margin: 16px 0 1px 12.5px;
-  font-family: PlayfairDisplay;
-  font-size: 16px;
+  font-family: 'Playfair Display';
+  font-size: 18px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -111,7 +120,7 @@ margin:1rem;
 //   height: 50.5px;
   margin: 1px 3.5px 21.5px 12.5px;
   font-family: Poppins;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -120,5 +129,62 @@ margin:1rem;
   text-align: left;
   color: #7e7e7e;
 
+}
+
+@media screen and(max-width:800px){
+  .awardscards{
+    width: 90vw;
+  height: 9em;
+//   margin: 40px 20px 16.5px 180px;
+// margin:0.2rem;
+
+// padding-right:10px;
+//   padding: 0 17px 0 0;
+  border-radius: 2.5px;
+  box-shadow: 0 0 7.5px 0 rgba(0, 0, 0, 0.16);
+  border: solid 0.5px #e4e5e6;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+}
+
+.awardstitle{
+//     width: 160.5px;
+//   height: 36px;
+  margin: 16px 0 1px 12.5px;
+  font-family: 'Playfair Display';
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #2c3134;
+
+}
+
+.awardstexts{
+    // width: 157px;
+//   height: 50.5px;
+  margin: 1px 3.5px 21.5px 12.5px;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  text-align: left;
+  color: #7e7e7e;
+  margin-bottom:2rem;
+
+}
+.awardsimage{
+    width: auto;
+  height: auto;
+//   margin: 0 12.5px 0 0;
+//   object-fit: contain;
+}
 }
 </style>
